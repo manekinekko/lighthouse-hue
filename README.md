@@ -1,6 +1,7 @@
 [Lighthouse](https://github.com/GoogleChrome/lighthouse) changing the color
-of [Philips Hue](https://www.developers.meethue.com/philips-hue-api) light bulbs
-based on overall report score.
+of [MagicLight Bluetooth Smart Light Bulb](https://www.magiclightbulbs.com/collections/bluetooth-bulbs/) based on overall report score.
+
+This project was inspired by [Eric Bidelman's Lighthouse Kiosk at Google I/O 2017](https://github.com/ebidel/lighthouse-hue).
 
 ### Get started
 
@@ -38,12 +39,6 @@ CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" yarn 
 ```
 
 ### Setup it
-
-Create a `.hueusername` in the root folder and fill it with a username
-registered on your Hue Bridge. If you don't have a username:
-
-1. press the Link Button on the Hue Bridge
-2. run the app (below). Doing so will create a "Lighthouse" user on the bridge.
 
 ```
 node index.js <URL>
