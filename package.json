@@ -1,13 +1,16 @@
 {
-  "name": "LigthhouseHue",
-  "version": "0.1.0",
-  "description": "Lighthouse score on Philips Hue light bulbs",
+  "name": "lighthouse-magiclight-bluetooth",
+  "version": "1.0.0",
+  "description": "Lighthouse score on MagicLight Bluetooth Smart Light Bulb",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "kiosk": "KIOSK=true node server.js"
   },
-  "author": "Eric Bidelman <ebidel@>",
+  "authors": [
+    "Eric Bidelman <ebidel@>",
+    "Wassim Chegham <contact@wassimchegham.com>"
+  ],
   "license": "Apache-2.0",
   "dependencies": {
     "body-parser": "^1.17.1",
