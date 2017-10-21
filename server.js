@@ -57,15 +57,6 @@ function playScoreSound(score) {
 }
 
 app.get('/run', (req, res) => {
-  // exec(`node index.js --view ${req.query.url}`, (err, stdout, stderr) => {
-  //      if (err) {
-  //     console.error(err);
-  //     res.status(500).send(err);
-  //     return;
-  //   }
-  //   res.status(200).send(stdout);
-  // });
-
   // Send headers for event-stream connection.
   res.writeHead(200, {
     'Content-Type': 'text/event-stream',
@@ -83,10 +74,8 @@ app.get('/run', (req, res) => {
   let log = '';
 
   child.stderr.on('data', data => {
-    // res.write(`id: ${id}\n`);
     res.write(`data: ${data.toString()}\n\n`);
     log += data.toString();
-    // res.flush();
   });
 
   child.on('close', code => {
